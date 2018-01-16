@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.5.1)
+  - IGIdenticon (0.4)
+  - SwiftyRSA (1.2.0):
+    - SwiftyRSA/ObjC (= 1.2.0)
+  - SwiftyRSA/ObjC (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - IGIdenticon
+  - SwiftyRSA
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  IGIdenticon: f9bbe354e8a3583f71c391395689a03115fe58c4
+  SwiftyRSA: 29221dba76837bf09e965ba7584e5919ea153c6f
+
+PODFILE CHECKSUM: 6029b2a826c79248ee584d59c71b9bd2a70f2d67
+
+COCOAPODS: 1.2.0
