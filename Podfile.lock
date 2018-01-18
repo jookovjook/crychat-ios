@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.5.1)
   - IGIdenticon (0.4)
-  - SwiftyRSA (1.2.0):
-    - SwiftyRSA/ObjC (= 1.2.0)
-  - SwiftyRSA/ObjC (1.2.0)
+  - KeychainSwift (8.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - IGIdenticon
-  - SwiftyRSA
+  - KeychainSwift (from `https://github.com/marketplacer/keychain-swift.git`, branch `swift-4.0`)
+
+EXTERNAL SOURCES:
+  KeychainSwift:
+    :branch: swift-4.0
+    :git: https://github.com/marketplacer/keychain-swift.git
+
+CHECKOUT OPTIONS:
+  KeychainSwift:
+    :commit: d772318c1528998c4bbd24064112464441b575fa
+    :git: https://github.com/marketplacer/keychain-swift.git
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   IGIdenticon: f9bbe354e8a3583f71c391395689a03115fe58c4
-  SwiftyRSA: 29221dba76837bf09e965ba7584e5919ea153c6f
+  KeychainSwift: e44a619b799a487555a1692e91b76028f35e0ff8
 
-PODFILE CHECKSUM: 6029b2a826c79248ee584d59c71b9bd2a70f2d67
+PODFILE CHECKSUM: bae49b2ab63feb523c7c902b6701321e78728d78
 
 COCOAPODS: 1.2.0

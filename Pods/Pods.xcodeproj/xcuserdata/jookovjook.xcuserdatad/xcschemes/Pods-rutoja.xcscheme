@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4930D32B012B7936275194094F398B5E"
-               BuildableName = "Pods_rutoja.framework"
-               BlueprintName = "Pods-rutoja"
+               BlueprintIdentifier = "5BA36FFEF231434D73172A9F5DAFBE37"
+               BuildableName = "Pods_crychat.framework"
+               BlueprintName = "Pods-crychat"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4930D32B012B7936275194094F398B5E"
-            BuildableName = "Pods_rutoja.framework"
-            BlueprintName = "Pods-rutoja"
+            BlueprintIdentifier = "5BA36FFEF231434D73172A9F5DAFBE37"
+            BuildableName = "Pods_crychat.framework"
+            BlueprintName = "Pods-crychat"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

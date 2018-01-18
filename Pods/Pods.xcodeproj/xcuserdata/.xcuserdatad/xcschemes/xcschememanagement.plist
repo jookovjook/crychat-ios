@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-rutoja.xcscheme</key>
+		<key>KeychainSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyRSA.xcscheme</key>
+		<key>Pods-rutoja.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
