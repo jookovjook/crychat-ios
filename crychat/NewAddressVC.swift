@@ -1,5 +1,5 @@
 //
-//  NewAccountVC.swift
+//  NewAddressVC.swift
 //  crychat
 //
 //  Created by Жека on 17/01/2018.
@@ -9,7 +9,7 @@
 import UIKit
 import IGIdenticon
 
-class NewAccountVC: UIViewController {
+class NewAddressVC: UIViewController {
 
     @IBOutlet weak var publicKeyLabel: UILabel!
     @IBOutlet weak var privateKeyLabel: UILabel!
@@ -20,28 +20,29 @@ class NewAccountVC: UIViewController {
         let (privateKey, publicKey) = try! CC.RSA.generateKeyPair(512)
         publicKeyLabel.text = publicKey.base64EncodedString()
         privateKeyLabel.text = privateKey.base64EncodedString()
-        identIcon.image = Identicon().icon(from: publicKey.base64EncodedString(), size: CGSize(width: identIcon.frame.width, height: identIcon.frame.height))
-        
+        identIcon.setPublicKey(publicKey.base64EncodedString())
     }
     
     @IBAction func cancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: {})
     }
     
+    @IBAction func doneAction(_ sender: Any) {
+        self.newAddressDelegate.onAddressGenerated(privateKeyLabel.text ?? "", publicKeyLabel.text ?? "")
+        self.cancelAction(self)
+    }
+    var newAddressDelegate : NewAddressDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateAction(self)
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    override func didReceiveMemoryWarning() { super.didReceiveMemoryWarning() }
     
 
 }
 
 protocol NewAddressDelegate {
-    func onAddressGenerated(_ privateKey: String, publicKey: String)
+    func onAddressGenerated(_ privateKey: String, _ publicKey: String)
 }

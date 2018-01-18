@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DA1312AE774EAA914C14BC5 /* Pods_rutoja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60816FD8019A2517136FCCF /* Pods_rutoja.framework */; };
 		420FA075200F6DF8003F364C /* SwCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA074200F6DF8003F364C /* SwCrypt.swift */; };
-		420FA077200F8150003F364C /* NewAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA076200F8150003F364C /* NewAccountVC.swift */; };
+		420FA077200F8150003F364C /* NewAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA076200F8150003F364C /* NewAddressVC.swift */; };
 		420FA079200F8D1B003F364C /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA078200F8D1B003F364C /* AddressVC.swift */; };
 		4232B2CC2003D47500C1ED06 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */; };
 		4232B2CE2003D4E500C1ED06 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232B2CD2003D4E500C1ED06 /* Chain.swift */; };
@@ -22,6 +22,10 @@
 		42615B112003D95700AA52F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42615B122003D95700AA52F9 /* Alamofire.framework */; };
 		426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A12F0200483DE00DBBC20 /* TNetwork.swift */; };
 		428F3CCD200486B9006B32A3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F3CCC200486B9006B32A3 /* Network.swift */; };
+		42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6A201105AC00452F76 /* DialogsTVC.swift */; };
+		42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6D20110B5200452F76 /* Dialog.swift */; };
+		42BC9C7120110EF900452F76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C7020110EF900452F76 /* Extensions.swift */; };
+		A6135A3BD118323BC71B6252 /* Pods_crychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF74942194DE379D5095FF /* Pods_crychat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,9 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CCF74942194DE379D5095FF /* Pods_crychat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crychat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D34AF9EFB910D41473CE1E /* Pods-rutoja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutoja.release.xcconfig"; path = "Pods/Target Support Files/Pods-rutoja/Pods-rutoja.release.xcconfig"; sourceTree = "<group>"; };
 		420FA074200F6DF8003F364C /* SwCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwCrypt.swift; sourceTree = "<group>"; };
-		420FA076200F8150003F364C /* NewAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountVC.swift; sourceTree = "<group>"; };
+		420FA076200F8150003F364C /* NewAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddressVC.swift; sourceTree = "<group>"; };
 		420FA078200F8D1B003F364C /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		4232B2CD2003D4E500C1ED06 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
@@ -56,7 +61,12 @@
 		42615B122003D95700AA52F9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426A12F0200483DE00DBBC20 /* TNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNetwork.swift; sourceTree = "<group>"; };
 		428F3CCC200486B9006B32A3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		42BC9C6A201105AC00452F76 /* DialogsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsTVC.swift; sourceTree = "<group>"; };
+		42BC9C6D20110B5200452F76 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		42BC9C7020110EF900452F76 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.debug.xcconfig"; sourceTree = "<group>"; };
 		D130F51D9713C9932AEC4798 /* Pods-rutoja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutoja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rutoja/Pods-rutoja.debug.xcconfig"; sourceTree = "<group>"; };
+		F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.release.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.release.xcconfig"; sourceTree = "<group>"; };
 		F60816FD8019A2517136FCCF /* Pods_rutoja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rutoja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +77,7 @@
 			files = (
 				42615B112003D95700AA52F9 /* Alamofire.framework in Frameworks */,
 				0DA1312AE774EAA914C14BC5 /* Pods_rutoja.framework in Frameworks */,
+				A6135A3BD118323BC71B6252 /* Pods_crychat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,8 @@
 		4248F9452003C372000F3CB1 /* crychat */ = {
 			isa = PBXGroup;
 			children = (
+				42BC9C6F20110BE300452F76 /* Utils */,
+				42BC9C6C20110B3600452F76 /* Messaging */,
 				4248F9462003C372000F3CB1 /* AppDelegate.swift */,
 				4248F9482003C372000F3CB1 /* MainVC.swift */,
 				4248F94A2003C372000F3CB1 /* Main.storyboard */,
@@ -101,15 +114,32 @@
 				4248F94F2003C372000F3CB1 /* LaunchScreen.storyboard */,
 				4248F9522003C372000F3CB1 /* Info.plist */,
 				4248F9582003C936000F3CB1 /* Block.swift */,
-				4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */,
 				4232B2CD2003D4E500C1ED06 /* Chain.swift */,
 				426A12F0200483DE00DBBC20 /* TNetwork.swift */,
 				428F3CCC200486B9006B32A3 /* Network.swift */,
-				420FA074200F6DF8003F364C /* SwCrypt.swift */,
-				420FA076200F8150003F364C /* NewAccountVC.swift */,
+				420FA076200F8150003F364C /* NewAddressVC.swift */,
 				420FA078200F8D1B003F364C /* AddressVC.swift */,
 			);
 			path = crychat;
+			sourceTree = "<group>";
+		};
+		42BC9C6C20110B3600452F76 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				42BC9C6A201105AC00452F76 /* DialogsTVC.swift */,
+				42BC9C6D20110B5200452F76 /* Dialog.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		42BC9C6F20110BE300452F76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */,
+				420FA074200F6DF8003F364C /* SwCrypt.swift */,
+				42BC9C7020110EF900452F76 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		90157FBD179C5480ED464083 /* Frameworks */ = {
@@ -118,6 +148,7 @@
 				42615B122003D95700AA52F9 /* Alamofire.framework */,
 				42615B0C2003D93F00AA52F9 /* Alamofire.framework */,
 				F60816FD8019A2517136FCCF /* Pods_rutoja.framework */,
+				0CCF74942194DE379D5095FF /* Pods_crychat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +158,8 @@
 			children = (
 				D130F51D9713C9932AEC4798 /* Pods-rutoja.debug.xcconfig */,
 				36D34AF9EFB910D41473CE1E /* Pods-rutoja.release.xcconfig */,
+				7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */,
+				F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -230,7 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rutoja/Pods-rutoja-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crychat/Pods-crychat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D06C9733BC6F28454F6BBD99 /* [CP] Copy Pods Resources */ = {
@@ -245,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rutoja/Pods-rutoja-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-crychat/Pods-crychat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -258,13 +291,16 @@
 				4232B2CE2003D4E500C1ED06 /* Chain.swift in Sources */,
 				4248F9592003C936000F3CB1 /* Block.swift in Sources */,
 				4248F9492003C372000F3CB1 /* MainVC.swift in Sources */,
+				42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */,
 				4248F9472003C372000F3CB1 /* AppDelegate.swift in Sources */,
 				420FA075200F6DF8003F364C /* SwCrypt.swift in Sources */,
+				42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */,
 				4232B2CC2003D47500C1ED06 /* SwiftyJSON.swift in Sources */,
+				42BC9C7120110EF900452F76 /* Extensions.swift in Sources */,
 				428F3CCD200486B9006B32A3 /* Network.swift in Sources */,
 				420FA079200F8D1B003F364C /* AddressVC.swift in Sources */,
 				426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */,
-				420FA077200F8150003F364C /* NewAccountVC.swift in Sources */,
+				420FA077200F8150003F364C /* NewAddressVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +435,7 @@
 		};
 		4248F9562003C372000F3CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D130F51D9713C9932AEC4798 /* Pods-rutoja.debug.xcconfig */;
+			baseConfigurationReference = 7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -416,7 +452,7 @@
 		};
 		4248F9572003C372000F3CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36D34AF9EFB910D41473CE1E /* Pods-rutoja.release.xcconfig */;
+			baseConfigurationReference = F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
