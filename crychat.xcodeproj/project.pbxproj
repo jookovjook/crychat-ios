@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DA1312AE774EAA914C14BC5 /* Pods_rutoja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60816FD8019A2517136FCCF /* Pods_rutoja.framework */; };
-		420FA075200F6DF8003F364C /* SwCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA074200F6DF8003F364C /* SwCrypt.swift */; };
-		420FA077200F8150003F364C /* NewAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA076200F8150003F364C /* NewAddressVC.swift */; };
 		420FA079200F8D1B003F364C /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FA078200F8D1B003F364C /* AddressVC.swift */; };
 		4232B2CC2003D47500C1ED06 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */; };
 		4232B2CE2003D4E500C1ED06 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232B2CD2003D4E500C1ED06 /* Chain.swift */; };
+		4241B83A2014C29B00A21208 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241B8392014C29B00A21208 /* JSON.swift */; };
+		4241B83C2014C5F900A21208 /* DialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241B83B2014C5F900A21208 /* DialogVC.swift */; };
+		4241B83E2014E34800A21208 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241B83D2014E34800A21208 /* Message.swift */; };
+		4243B3B52016120F00CECC94 /* TAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243B3B42016120F00CECC94 /* TAlert.swift */; };
+		4243B3B820161D2D00CECC94 /* AddressSettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */; };
 		4248F9472003C372000F3CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248F9462003C372000F3CB1 /* AppDelegate.swift */; };
 		4248F9492003C372000F3CB1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248F9482003C372000F3CB1 /* MainVC.swift */; };
 		4248F94C2003C372000F3CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248F94A2003C372000F3CB1 /* Main.storyboard */; };
@@ -22,9 +24,12 @@
 		42615B112003D95700AA52F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42615B122003D95700AA52F9 /* Alamofire.framework */; };
 		426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A12F0200483DE00DBBC20 /* TNetwork.swift */; };
 		428F3CCD200486B9006B32A3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F3CCC200486B9006B32A3 /* Network.swift */; };
+		429B37D62018E0F90099EE89 /* NewDialogTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B37D52018E0F90099EE89 /* NewDialogTVC.swift */; };
+		429B37D82018E2B60099EE89 /* Messaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B37D72018E2B60099EE89 /* Messaging.swift */; };
 		42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6A201105AC00452F76 /* DialogsTVC.swift */; };
 		42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6D20110B5200452F76 /* Dialog.swift */; };
 		42BC9C7120110EF900452F76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C7020110EF900452F76 /* Extensions.swift */; };
+		42C468E820177E5500259502 /* CryGraphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C468E720177E5500259502 /* CryGraphy.swift */; };
 		A6135A3BD118323BC71B6252 /* Pods_crychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF74942194DE379D5095FF /* Pods_crychat.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,12 +48,14 @@
 
 /* Begin PBXFileReference section */
 		0CCF74942194DE379D5095FF /* Pods_crychat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crychat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D34AF9EFB910D41473CE1E /* Pods-rutoja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutoja.release.xcconfig"; path = "Pods/Target Support Files/Pods-rutoja/Pods-rutoja.release.xcconfig"; sourceTree = "<group>"; };
-		420FA074200F6DF8003F364C /* SwCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwCrypt.swift; sourceTree = "<group>"; };
-		420FA076200F8150003F364C /* NewAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddressVC.swift; sourceTree = "<group>"; };
 		420FA078200F8D1B003F364C /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		4232B2CD2003D4E500C1ED06 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		4241B8392014C29B00A21208 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4241B83B2014C5F900A21208 /* DialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogVC.swift; sourceTree = "<group>"; };
+		4241B83D2014E34800A21208 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4243B3B42016120F00CECC94 /* TAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAlert.swift; sourceTree = "<group>"; };
+		4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSettingsTVC.swift; sourceTree = "<group>"; };
 		4248F9432003C372000F3CB1 /* crychat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crychat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248F9462003C372000F3CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4248F9482003C372000F3CB1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -61,11 +68,13 @@
 		42615B122003D95700AA52F9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426A12F0200483DE00DBBC20 /* TNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNetwork.swift; sourceTree = "<group>"; };
 		428F3CCC200486B9006B32A3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		429B37D52018E0F90099EE89 /* NewDialogTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDialogTVC.swift; sourceTree = "<group>"; };
+		429B37D72018E2B60099EE89 /* Messaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messaging.swift; sourceTree = "<group>"; };
 		42BC9C6A201105AC00452F76 /* DialogsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsTVC.swift; sourceTree = "<group>"; };
 		42BC9C6D20110B5200452F76 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		42BC9C7020110EF900452F76 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		42C468E720177E5500259502 /* CryGraphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryGraphy.swift; sourceTree = "<group>"; };
 		7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.debug.xcconfig"; sourceTree = "<group>"; };
-		D130F51D9713C9932AEC4798 /* Pods-rutoja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutoja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rutoja/Pods-rutoja.debug.xcconfig"; sourceTree = "<group>"; };
 		F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.release.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.release.xcconfig"; sourceTree = "<group>"; };
 		F60816FD8019A2517136FCCF /* Pods_rutoja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rutoja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42615B112003D95700AA52F9 /* Alamofire.framework in Frameworks */,
-				0DA1312AE774EAA914C14BC5 /* Pods_rutoja.framework in Frameworks */,
 				A6135A3BD118323BC71B6252 /* Pods_crychat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4243B3B620161D0A00CECC94 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		4248F93A2003C372000F3CB1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,8 @@
 		4248F9452003C372000F3CB1 /* crychat */ = {
 			isa = PBXGroup;
 			children = (
+				42C468E620177E0E00259502 /* CryGraphy */,
+				4243B3B620161D0A00CECC94 /* Settings */,
 				42BC9C6F20110BE300452F76 /* Utils */,
 				42BC9C6C20110B3600452F76 /* Messaging */,
 				4248F9462003C372000F3CB1 /* AppDelegate.swift */,
@@ -117,7 +135,6 @@
 				4232B2CD2003D4E500C1ED06 /* Chain.swift */,
 				426A12F0200483DE00DBBC20 /* TNetwork.swift */,
 				428F3CCC200486B9006B32A3 /* Network.swift */,
-				420FA076200F8150003F364C /* NewAddressVC.swift */,
 				420FA078200F8D1B003F364C /* AddressVC.swift */,
 			);
 			path = crychat;
@@ -128,6 +145,10 @@
 			children = (
 				42BC9C6A201105AC00452F76 /* DialogsTVC.swift */,
 				42BC9C6D20110B5200452F76 /* Dialog.swift */,
+				4241B83B2014C5F900A21208 /* DialogVC.swift */,
+				4241B83D2014E34800A21208 /* Message.swift */,
+				429B37D52018E0F90099EE89 /* NewDialogTVC.swift */,
+				429B37D72018E2B60099EE89 /* Messaging.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -136,10 +157,19 @@
 			isa = PBXGroup;
 			children = (
 				4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */,
-				420FA074200F6DF8003F364C /* SwCrypt.swift */,
 				42BC9C7020110EF900452F76 /* Extensions.swift */,
+				4241B8392014C29B00A21208 /* JSON.swift */,
+				4243B3B42016120F00CECC94 /* TAlert.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		42C468E620177E0E00259502 /* CryGraphy */ = {
+			isa = PBXGroup;
+			children = (
+				42C468E720177E5500259502 /* CryGraphy.swift */,
+			);
+			path = CryGraphy;
 			sourceTree = "<group>";
 		};
 		90157FBD179C5480ED464083 /* Frameworks */ = {
@@ -156,8 +186,6 @@
 		BC2DFFA8C9A2EA1E1A1BA63E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D130F51D9713C9932AEC4798 /* Pods-rutoja.debug.xcconfig */,
-				36D34AF9EFB910D41473CE1E /* Pods-rutoja.release.xcconfig */,
 				7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */,
 				F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */,
 			);
@@ -242,13 +270,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crychat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A35E2D9A5474FBBDB8B58B70 /* [CP] Embed Pods Frameworks */ = {
@@ -257,9 +288,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-crychat/Pods-crychat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IGIdenticon/IGIdenticon.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGIdenticon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -289,18 +327,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4232B2CE2003D4E500C1ED06 /* Chain.swift in Sources */,
+				4241B83A2014C29B00A21208 /* JSON.swift in Sources */,
 				4248F9592003C936000F3CB1 /* Block.swift in Sources */,
 				4248F9492003C372000F3CB1 /* MainVC.swift in Sources */,
 				42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */,
 				4248F9472003C372000F3CB1 /* AppDelegate.swift in Sources */,
-				420FA075200F6DF8003F364C /* SwCrypt.swift in Sources */,
+				429B37D62018E0F90099EE89 /* NewDialogTVC.swift in Sources */,
+				4243B3B52016120F00CECC94 /* TAlert.swift in Sources */,
+				429B37D82018E2B60099EE89 /* Messaging.swift in Sources */,
 				42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */,
 				4232B2CC2003D47500C1ED06 /* SwiftyJSON.swift in Sources */,
 				42BC9C7120110EF900452F76 /* Extensions.swift in Sources */,
 				428F3CCD200486B9006B32A3 /* Network.swift in Sources */,
+				4241B83C2014C5F900A21208 /* DialogVC.swift in Sources */,
+				4243B3B820161D2D00CECC94 /* AddressSettingsTVC.swift in Sources */,
 				420FA079200F8D1B003F364C /* AddressVC.swift in Sources */,
+				4241B83E2014E34800A21208 /* Message.swift in Sources */,
 				426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */,
-				420FA077200F8150003F364C /* NewAddressVC.swift in Sources */,
+				42C468E820177E5500259502 /* CryGraphy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +424,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 			};
 			name = Debug;
 		};
@@ -429,6 +474,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

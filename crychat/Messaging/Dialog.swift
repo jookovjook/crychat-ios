@@ -13,6 +13,7 @@ import IGIdenticon
 class Dialog {
     
     var publicKey: String = ""
+    var messagesList: [Message] = []
     
     init(){}
     

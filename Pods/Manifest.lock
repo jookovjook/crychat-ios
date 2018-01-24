@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.5.1)
-  - IGIdenticon (0.4)
+  - Alamofire (4.6.0)
+  - IGIdenticon (0.5)
   - KeychainSwift (8.0.2)
 
 DEPENDENCIES:
@@ -19,10 +19,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/marketplacer/keychain-swift.git
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  IGIdenticon: f9bbe354e8a3583f71c391395689a03115fe58c4
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  IGIdenticon: 0f8fa2c776e35d4cb204bedbc5005ef748b263d8
   KeychainSwift: e44a619b799a487555a1692e91b76028f35e0ff8
 
-PODFILE CHECKSUM: bc9750dd58171a43636c3ecfe9cc917d8b2a4dbb
+PODFILE CHECKSUM: d43ee8a49bc0d9ead70c4f33117c093347a1fd00
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0

@@ -12,10 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tAlert: TAlert?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        
+        let (key1_64, key2_64) = generateKeyPair()
+//        print("PublicKey: \(key1_64)")
+//        print("Priv)
+        
+        let key = pubKey(from: key1_64)
+        let encryptedString = encryptString("Esp12345aña🤗Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game. Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.", with: key!)
+        
+        let prKey = privKey(from: key2_64)
+        print(decryptString(encryptedString, with: prKey!))
+        
         return true
     }
 

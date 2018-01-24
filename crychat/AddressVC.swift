@@ -14,10 +14,6 @@ class AddressVC: UIViewController, NewAddressDelegate {
 
     @IBOutlet weak var identIcon: UIImageView!
     @IBOutlet weak var publicKeyLabel: UILabel!
-    @IBOutlet weak var nextButton: UIBarButtonItem!
-    @IBAction func createNewButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "newAddressSegue", sender: self)
-    }
     
     let kc = KeychainSwift()
     
@@ -32,19 +28,16 @@ class AddressVC: UIViewController, NewAddressDelegate {
     func showPublicKey(_ publicKey: String){
         publicKeyLabel.text = publicKey
         identIcon.setPublicKey(publicKey)
-//        identIcon.image = Identicon().icon(from: publicKey, size: CGSize(width: identIcon.frame.width, height: identIcon.frame.height))
         if(publicKey == ""){
-            nextButton.isEnabled = false
             identIcon.alpha = 0
         }else{
-            nextButton.isEnabled = true
             identIcon.alpha = 1
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "newAddressSegue"){
-            let destination = segue.destination as! NewAddressVC
+            let destination = segue.destination as! AddressSettingsTVC
             destination.newAddressDelegate = self
         }
     }

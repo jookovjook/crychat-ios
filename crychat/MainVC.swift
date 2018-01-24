@@ -16,24 +16,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func sendAction(_ sender: Any) {
         let uuid : String = (UIDevice.current.identifierForVendor?.uuidString)!
-        let data = ["message": inputTF.text ?? "", "client" : uuid]
-        if let theJSONData = try?  JSONSerialization.data(
-            withJSONObject: data,
-            options: .sortedKeys
-            ),
-            let theJSONText = String(data: theJSONData,
-                                     encoding: String.Encoding.ascii) {
-            print("JSON string = \n\(theJSONText)")
-                    networkRequest(addURL: "block/add.php", json : ["data" : theJSONText ], completionHandler: {json, error, msg in
-                        if(error == 0){
-                            self.chain.reload(completionHandler : {_ in
-                                self.inputTF.text = ""
-                                self.tableView.reloadData()})
-                        }else{
-                            print("Error \(error): \(msg)")
-                        }
-            
-                    })
+        let jsonText = convertToString(["message": inputTF.text ?? "", "client" : uuid])
+        if(jsonText != ""){
+            networkRequest(addURL: "block/add.php", json : ["data" : jsonText ], completionHandler: {json, error, msg in
+                if(error == 0){
+                    self.chain.reload(completionHandler : {_ in
+                        self.inputTF.text = ""
+                        self.tableView.reloadData()})
+                }else{
+                    print("Error \(error): \(msg)")
+                }
+                
+            })
         }
 
     }
@@ -51,16 +45,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        
-        
-        
-        for i in 1...10 {
-            let (privateKey, publicKey) = try! CC.RSA.generateKeyPair(512) //384
-            print("private : \(privateKey.base64EncodedString())")
-            print("----------")
-            print("public : \(publicKey.base64EncodedString())")
-            print(" ")
-        }
         
         
     }
@@ -93,12 +77,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chain.messagesChain.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellBlock =  tableView.dequeueReusableCell(withIdentifier: "cellBlock", for: indexPath) as! CellBlock
-        cellBlock.bind(chain.messagesChain[indexPath.row])
+//        cellBlock.bind(chain.messagesChain[indexPath.row])
         return cellBlock
     }
 

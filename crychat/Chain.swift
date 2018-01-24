@@ -7,11 +7,16 @@
 //
 
 import Foundation
+import KeychainSwift
 
 class Chain {
     
     var chain : [Block] = []
-    var messagesChain : [Message] = []
+    var dialogsChain : [Dialog] = []
+    var dialogsList : [String] = []
+    
+    let kc = KeychainSwift()
+    
     
     init(chain: JSON){
         for block in (chain.array)!{
@@ -25,18 +30,34 @@ class Chain {
     
     init(){}
     
+    func addMessage(_ message: Message){
+        if(!dialogsList.contains(message.with)){
+            dialogsChain.append(Dialog(message.with))
+            dialogsList.append(message.with)
+        }
+        let index = dialogsList.index(of: message.with)
+        dialogsChain[index!].messagesList.append(message)
+    }
+    
     func reload(completionHandler: @escaping (Bool) -> ()){
         networkRequest(addURL: "chain/get.php", completionHandler: { json, error, msg in
             self.chain.removeAll()
-            self.messagesChain.removeAll()
+            self.dialogsChain.removeAll()
+            self.dialogsList.removeAll()
+//            print("Chain: \(json)")
             if(error == 0){
                 let chain = json["chain"].array
-                for block in chain! {
-                    self.chain.append(Block(block: block))
-                    let message = Message(block: block)
-                    if message.valid {
-                        self.messagesChain.append(message)
+                for jsonBlock in chain! {
+                    let block = Block(block: jsonBlock)
+                    self.chain.append(block)
+                    let publicKey = self.kc.get("publicKey") ?? ""
+                    if(block.data.type == "message"){
+                        let message = Message(block: jsonBlock, publicKey)
+                        if message.valid {
+                            self.addMessage(message)
+                        }
                     }
+                    
                 }
                 completionHandler(true)
             }

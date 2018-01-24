@@ -78,17 +78,16 @@ func pushReqSafe(level : Int = 0, addURL: String, json:[String: Any], completion
 }
 
 func showNetworkAlert(hide : Bool = false){
-//    if((UIApplication.shared.delegate as! AppDelegate).tAlert == nil){
-//        do{
-//            (UIApplication.shared.delegate as! AppDelegate).tAlert = TAlert()
-//        }
-//    }
-//    let tAlert = (UIApplication.shared.delegate as! AppDelegate).tAlert
-//    if(hide){
-//        tAlert?.hide()
-//    }else{
-//        tAlert?.show()
-//    }
+    if((UIApplication.shared.delegate as! AppDelegate).tAlert == nil){
+        do{
+            (UIApplication.shared.delegate as! AppDelegate).tAlert = TAlert()
+        }
+    }
+    if(hide){
+        (UIApplication.shared.delegate as! AppDelegate).tAlert?.hide()
+    }else{
+        (UIApplication.shared.delegate as! AppDelegate).tAlert?.show()
+    }
 }
 
 

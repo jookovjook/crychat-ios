@@ -16,40 +16,39 @@ class Block{
     var previousHash: String = ""
     var hash: String = ""
     var timestamp: Int = 0
-    var data: String = ""
+    var data: BlockData
     
     init(block: JSON){
         self.id = block["id"].intValue
         self.previousHash = block["previousHash"].stringValue
         self.hash = block["hash"].stringValue
         self.timestamp = block["timestamp"].intValue
-        self.data = block["data"].stringValue
-//        print("\(block.rawString())")
+        self.data = BlockData(block["data"].stringValue)
     }
     
 }
 
-class Message: Block {
+class BlockData {
     
-    var message: String = ""
-    var client: String = ""
-    var valid: Bool = false
+    var type: String = ""
+    var content: JSON
     
-    override init(block: JSON){
-        super.init(block: block)
-        let data = convertSwiftyJSON(text: self.data)
-        let message = data["message"]
-        if(message.error == nil){
-            self.message = message.stringValue
-            self.valid = true
+    init(_ strData: String){
+        let jsonData = convertSwiftyJSON(text: strData)
+        
+        let type = jsonData["type"]
+        if(type.error == nil){
+            self.type = type.stringValue
         }
-        let client = data["client"]
-        if(client.error == nil){
-            self.client = client.stringValue
-        }
+        
+        let content = jsonData["content"]
+        self.content = content.error == nil ? content : JSON()
+//        print("Content: \(self.content)")
     }
     
 }
+
+
 
 class CellBlock: UITableViewCell{
     
@@ -60,7 +59,7 @@ class CellBlock: UITableViewCell{
     func bind(_ message: Message){
         label.text = message.message
         topLine.isHidden = message.id <= 1
-        identIcon.image = Identicon().icon(from: message.client, size: CGSize(width: identIcon.frame.width, height: identIcon.frame.height))
+        identIcon.image = Identicon().icon(from: message.with, size: CGSize(width: identIcon.frame.width, height: identIcon.frame.height))
     }
     
 }

@@ -10,29 +10,44 @@ import UIKit
 
 class DialogsTVC: UITableViewController {
     
-    var dialogsList : [Dialog] = []
-
+    var chain : Chain = Chain()
+    
     override func viewDidLoad() {
-        dialogsList.append(Dialog("sdfsdfws"))
-        dialogsList.append(Dialog("sdf4r8wdws"))
-        dialogsList.append(Dialog("f324f23dwdfsdfws"))
-        dialogsList.append(Dialog("sdd2d3fws"))
-        dialogsList.append(Dialog("sd3f3r34fws"))
         super.viewDidLoad()
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(self.refreshData(sender:)), for: UIControlEvents.valueChanged)
+        tableView.setContentOffset(CGPoint(x: 0, y: -((refreshControl?.frame.size.height)!)), animated: true)
+        refreshControl?.beginRefreshing()
+        refreshData(sender: refreshControl!)
     }
 
     override func didReceiveMemoryWarning() { super.didReceiveMemoryWarning() }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dialogsList.count
+        return chain.dialogsList.count
+    }
+    
+    @objc func refreshData(sender: UIRefreshControl){
+        chain.reload(completionHandler: {_ in
+            self.refreshControl?.endRefreshing()
+            self.tableView.reloadData()
+        })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "dialogSegue"? :
+            let destination = segue.destination as! DialogVC
+            destination.dialog = chain.dialogsChain[(self.tableView.indexPathForSelectedRow?.row)!]
+            break
+        default:
+            break
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let dialogCell = tableView.dequeueReusableCell(withIdentifier: "dialogCell", for: indexPath) as! DialogCell
-        
-        dialogCell.bind(dialogsList[indexPath.row])
-        
+        dialogCell.bind(chain.dialogsChain[indexPath.row])
         return dialogCell
     }
 
