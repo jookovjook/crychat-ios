@@ -7,27 +7,42 @@
 //
 
 import UIKit
+import CryptoSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tAlert: TAlert?
+//    var mpcManager: MPCManager!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        let (key1_64, key2_64) = generateKeyPair()
-//        print("PublicKey: \(key1_64)")
-//        print("Priv)
-        
-        let key = pubKey(from: key1_64)
-        let encryptedString = encryptString("Esp12345aña🤗Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game. Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.", with: key!)
-        
-        let prKey = privKey(from: key2_64)
-        print(decryptString(encryptedString, with: prKey!))
-        
+//        encryptionsTest()
+//        mpcManager = MPCManager()
         return true
+    }
+    
+    func encryptionsTest(_ doit: Bool = true){
+        if(!doit){return}
+        do {
+            //            let aes2 = try AES(key: )
+            let key = "passwordpassword"
+            let iv = String(key.reversed())
+            let aes = try AES(key: key) // aes128
+            let ciphertext = try aes.encrypt(Array("Nullam quis risus eget urna mollis ornfsdhfskjfsjkhfksdf suihf8w4infsjk o4suf biubrf oi refekljdnfo3 irufnjklr3fn iou3rnfl npeuwifn p349io relkfsare vel eu leo.".utf8))
+            var encryptedData = Data()
+            for item in ciphertext{
+                encryptedData.append(item)
+            }
+            print("Encrypted string: \(encryptedData.base64EncodedString())")
+            let decryptedTxt = try aes.decrypt(ciphertext)
+            var data = Data()
+            for item in decryptedTxt {
+                data.append(item)
+            }
+            let string = String(data: data, encoding: .utf8) ?? "*error*"
+            print("Decrypted string: \(string)")
+        } catch { }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

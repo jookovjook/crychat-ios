@@ -36,13 +36,14 @@ class Message: Block {
         }
         
         let content = self.data.content
-        let privateKey = kc.get("privateKey") ?? ""
+        let privateKey = privKey(from: kc.get("privateKey")!)
         
         let key1 = content["key1"]
         var unlockKey = ""
         
         if(key1.error == nil){
-            let privKeyJsonString = decryptString(key1.stringValue, with: privKey(from: privateKey)!)
+            let privKeyJsonString = key1.stringValue.decrypt(with: privateKey!)
+//            let privKeyJsonString = decryptString(key1.stringValue, with: privKey(from: privateKey)!)
             let privKeyJson = convertSwiftyJSON(text: privKeyJsonString)
             let key = privKeyJson["key"]
             if (key.error == nil){
@@ -56,7 +57,8 @@ class Message: Block {
         let key2 = content["key2"]
         
         if(key2.error == nil){
-            let privKeyJsonString = decryptString(key2.stringValue, with: privKey(from: privateKey)!)
+            let privKeyJsonString = key2.stringValue.decrypt(with: privateKey!)
+//            let privKeyJsonString = decryptString(key2.stringValue, with: prKey)
             let privKeyJson = convertSwiftyJSON(text: privKeyJsonString)
             let key = privKeyJson["key"]
             if (key.error == nil){
@@ -76,7 +78,7 @@ class Message: Block {
             let encryptedJSON = content["encryptedMessage"]
             if(encryptedJSON.error == nil){
                 let encryptedMessage = encryptedJSON.stringValue
-                let decryptedJSONString = decryptString(encryptedMessage, with: privKey(from: unlockKey)!)
+                let decryptedJSONString = encryptedMessage.decrypt(with: privKey(from: unlockKey)!)
                 print("Unlocked the message: \(decryptedJSONString)")
                 let decryptedJSON = convertSwiftyJSON(text: decryptedJSONString)
                 

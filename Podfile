@@ -12,5 +12,7 @@ target 'crychat' do
 	pod 'KeychainSwift', git: 'https://github.com/marketplacer/keychain-swift.git', branch: 'swift-4.0'
 #   Pods for crychat
 #   pod 'RNCryptor', '~> 5.0'
+  pod 'CryptoSwift'
+  pod 'SwiftSocket'
 
 end

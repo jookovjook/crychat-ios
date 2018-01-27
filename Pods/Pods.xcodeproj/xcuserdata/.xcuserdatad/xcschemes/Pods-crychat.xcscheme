@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD2A106160D0522B832E585D53A9DC4B'
+               BlueprintIdentifier = '9362E48A02D6B18E9F5DAAA451BDF947'
                BlueprintName = 'Pods-crychat'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-crychat.framework'>

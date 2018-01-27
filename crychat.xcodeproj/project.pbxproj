@@ -16,20 +16,24 @@
 		4243B3B52016120F00CECC94 /* TAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243B3B42016120F00CECC94 /* TAlert.swift */; };
 		4243B3B820161D2D00CECC94 /* AddressSettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */; };
 		4248F9472003C372000F3CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248F9462003C372000F3CB1 /* AppDelegate.swift */; };
-		4248F9492003C372000F3CB1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248F9482003C372000F3CB1 /* MainVC.swift */; };
 		4248F94C2003C372000F3CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248F94A2003C372000F3CB1 /* Main.storyboard */; };
 		4248F94E2003C372000F3CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248F94D2003C372000F3CB1 /* Assets.xcassets */; };
 		4248F9512003C372000F3CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248F94F2003C372000F3CB1 /* LaunchScreen.storyboard */; };
 		4248F9592003C936000F3CB1 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248F9582003C936000F3CB1 /* Block.swift */; };
+		42530EE720193C4900BCCA2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42530EE620193C4900BCCA2F /* Data.swift */; };
+		42530EE9201944F300BCCA2F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42530EE8201944F300BCCA2F /* String.swift */; };
 		42615B112003D95700AA52F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42615B122003D95700AA52F9 /* Alamofire.framework */; };
 		426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A12F0200483DE00DBBC20 /* TNetwork.swift */; };
 		428F3CCD200486B9006B32A3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F3CCC200486B9006B32A3 /* Network.swift */; };
+		4292A8E72019E99C00261FCA /* CryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292A8E62019E99C00261FCA /* CryptoSwift.swift */; };
 		429B37D62018E0F90099EE89 /* NewDialogTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B37D52018E0F90099EE89 /* NewDialogTVC.swift */; };
 		429B37D82018E2B60099EE89 /* Messaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B37D72018E2B60099EE89 /* Messaging.swift */; };
 		42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6A201105AC00452F76 /* DialogsTVC.swift */; };
 		42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C6D20110B5200452F76 /* Dialog.swift */; };
 		42BC9C7120110EF900452F76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9C7020110EF900452F76 /* Extensions.swift */; };
 		42C468E820177E5500259502 /* CryGraphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C468E720177E5500259502 /* CryGraphy.swift */; };
+		42F1C96C201A39AC0065843C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1C96B201A39AC0065843C /* TestVC.swift */; };
+		42F1C96E201A3A580065843C /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1C96D201A3A580065843C /* MPCManager.swift */; };
 		A6135A3BD118323BC71B6252 /* Pods_crychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF74942194DE379D5095FF /* Pods_crychat.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,22 +62,26 @@
 		4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSettingsTVC.swift; sourceTree = "<group>"; };
 		4248F9432003C372000F3CB1 /* crychat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crychat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4248F9462003C372000F3CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4248F9482003C372000F3CB1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4248F94B2003C372000F3CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4248F94D2003C372000F3CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4248F9502003C372000F3CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4248F9522003C372000F3CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4248F9582003C936000F3CB1 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		42530EE620193C4900BCCA2F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		42530EE8201944F300BCCA2F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		42615B0C2003D93F00AA52F9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42615B122003D95700AA52F9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426A12F0200483DE00DBBC20 /* TNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNetwork.swift; sourceTree = "<group>"; };
 		428F3CCC200486B9006B32A3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4292A8E62019E99C00261FCA /* CryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSwift.swift; sourceTree = "<group>"; };
 		429B37D52018E0F90099EE89 /* NewDialogTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDialogTVC.swift; sourceTree = "<group>"; };
 		429B37D72018E2B60099EE89 /* Messaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messaging.swift; sourceTree = "<group>"; };
 		42BC9C6A201105AC00452F76 /* DialogsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsTVC.swift; sourceTree = "<group>"; };
 		42BC9C6D20110B5200452F76 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		42BC9C7020110EF900452F76 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		42C468E720177E5500259502 /* CryGraphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryGraphy.swift; sourceTree = "<group>"; };
+		42F1C96B201A39AC0065843C /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		42F1C96D201A3A580065843C /* MPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
 		7A5AF3670F9D7B991085F907 /* Pods-crychat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.debug.xcconfig"; sourceTree = "<group>"; };
 		F45C7E873B6ACBEE6475C09F /* Pods-crychat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crychat.release.xcconfig"; path = "Pods/Target Support Files/Pods-crychat/Pods-crychat.release.xcconfig"; sourceTree = "<group>"; };
 		F60816FD8019A2517136FCCF /* Pods_rutoja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rutoja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +103,7 @@
 		4243B3B620161D0A00CECC94 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				420FA078200F8D1B003F364C /* AddressVC.swift */,
 				4243B3B720161D2D00CECC94 /* AddressSettingsTVC.swift */,
 			);
 			path = Settings;
@@ -121,21 +130,16 @@
 		4248F9452003C372000F3CB1 /* crychat */ = {
 			isa = PBXGroup;
 			children = (
+				42F1C969201A39170065843C /* BlockChain */,
 				42C468E620177E0E00259502 /* CryGraphy */,
 				4243B3B620161D0A00CECC94 /* Settings */,
 				42BC9C6F20110BE300452F76 /* Utils */,
 				42BC9C6C20110B3600452F76 /* Messaging */,
 				4248F9462003C372000F3CB1 /* AppDelegate.swift */,
-				4248F9482003C372000F3CB1 /* MainVC.swift */,
 				4248F94A2003C372000F3CB1 /* Main.storyboard */,
 				4248F94D2003C372000F3CB1 /* Assets.xcassets */,
 				4248F94F2003C372000F3CB1 /* LaunchScreen.storyboard */,
 				4248F9522003C372000F3CB1 /* Info.plist */,
-				4248F9582003C936000F3CB1 /* Block.swift */,
-				4232B2CD2003D4E500C1ED06 /* Chain.swift */,
-				426A12F0200483DE00DBBC20 /* TNetwork.swift */,
-				428F3CCC200486B9006B32A3 /* Network.swift */,
-				420FA078200F8D1B003F364C /* AddressVC.swift */,
 			);
 			path = crychat;
 			sourceTree = "<group>";
@@ -156,10 +160,11 @@
 		42BC9C6F20110BE300452F76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */,
+				42F1C96A201A39610065843C /* SwiftyJSON */,
 				42BC9C7020110EF900452F76 /* Extensions.swift */,
-				4241B8392014C29B00A21208 /* JSON.swift */,
 				4243B3B42016120F00CECC94 /* TAlert.swift */,
+				426A12F0200483DE00DBBC20 /* TNetwork.swift */,
+				428F3CCC200486B9006B32A3 /* Network.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -168,8 +173,31 @@
 			isa = PBXGroup;
 			children = (
 				42C468E720177E5500259502 /* CryGraphy.swift */,
+				42530EE620193C4900BCCA2F /* Data.swift */,
+				42530EE8201944F300BCCA2F /* String.swift */,
+				4292A8E62019E99C00261FCA /* CryptoSwift.swift */,
 			);
 			path = CryGraphy;
+			sourceTree = "<group>";
+		};
+		42F1C969201A39170065843C /* BlockChain */ = {
+			isa = PBXGroup;
+			children = (
+				4248F9582003C936000F3CB1 /* Block.swift */,
+				4232B2CD2003D4E500C1ED06 /* Chain.swift */,
+				42F1C96B201A39AC0065843C /* TestVC.swift */,
+				42F1C96D201A3A580065843C /* MPCManager.swift */,
+			);
+			path = BlockChain;
+			sourceTree = "<group>";
+		};
+		42F1C96A201A39610065843C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				4232B2CB2003D47500C1ED06 /* SwiftyJSON.swift */,
+				4241B8392014C29B00A21208 /* JSON.swift */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		90157FBD179C5480ED464083 /* Frameworks */ = {
@@ -290,14 +318,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-crychat/Pods-crychat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IGIdenticon/IGIdenticon.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGIdenticon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -326,24 +358,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F1C96E201A3A580065843C /* MPCManager.swift in Sources */,
 				4232B2CE2003D4E500C1ED06 /* Chain.swift in Sources */,
 				4241B83A2014C29B00A21208 /* JSON.swift in Sources */,
 				4248F9592003C936000F3CB1 /* Block.swift in Sources */,
-				4248F9492003C372000F3CB1 /* MainVC.swift in Sources */,
 				42BC9C6E20110B5200452F76 /* Dialog.swift in Sources */,
 				4248F9472003C372000F3CB1 /* AppDelegate.swift in Sources */,
 				429B37D62018E0F90099EE89 /* NewDialogTVC.swift in Sources */,
 				4243B3B52016120F00CECC94 /* TAlert.swift in Sources */,
 				429B37D82018E2B60099EE89 /* Messaging.swift in Sources */,
 				42BC9C6B201105AC00452F76 /* DialogsTVC.swift in Sources */,
+				4292A8E72019E99C00261FCA /* CryptoSwift.swift in Sources */,
 				4232B2CC2003D47500C1ED06 /* SwiftyJSON.swift in Sources */,
+				42530EE720193C4900BCCA2F /* Data.swift in Sources */,
 				42BC9C7120110EF900452F76 /* Extensions.swift in Sources */,
 				428F3CCD200486B9006B32A3 /* Network.swift in Sources */,
 				4241B83C2014C5F900A21208 /* DialogVC.swift in Sources */,
 				4243B3B820161D2D00CECC94 /* AddressSettingsTVC.swift in Sources */,
 				420FA079200F8D1B003F364C /* AddressVC.swift in Sources */,
 				4241B83E2014E34800A21208 /* Message.swift in Sources */,
+				42530EE9201944F300BCCA2F /* String.swift in Sources */,
 				426A12F1200483DE00DBBC20 /* TNetwork.swift in Sources */,
+				42F1C96C201A39AC0065843C /* TestVC.swift in Sources */,
 				42C468E820177E5500259502 /* CryGraphy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
